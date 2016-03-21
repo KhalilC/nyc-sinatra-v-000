@@ -1,5 +1,5 @@
 require 'spec_helper'
-
+require 'pry'
 describe FiguresController do
   before do
     queenb = Figure.create(:name => "Beyonce")
@@ -111,7 +111,6 @@ describe FiguresController do
     @figure = Figure.first
     expect(page.current_path).to eq("/figures/#{@figure.id}")
     expect(page.body).to include(@figure.name)    
-
     expect(page.body).to include("Big Tower")
     expect(@figure.name).to eq("Missy")
 

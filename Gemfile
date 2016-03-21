@@ -13,3 +13,4 @@ gem 'rspec'
 gem 'rack-test'
 gem 'sinatra-twitter-bootstrap', :require => 'sinatra/twitter-bootstrap'
 gem 'capybara'
+gem "rack", ">= 1.3.0", "< 1.6.0"
